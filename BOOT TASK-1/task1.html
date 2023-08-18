@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-1</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 vh-100 bg-white">
+                <h1 align="left">Company Name</h1>
+                <center>
+                    <img src="download.png" width="500px" height="500px">
+                    <h2 align="center">Create an Account</h2>
+                    <p>Create a minimal registration page using Bootstrap 5
+                        html form elements
+                    </p>
+                </center>
+            </div>
+            <div class="col-lg-6 vh-100 bg-white">
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">First Name:</label>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                      </div>
+                      <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Last Name:</label>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="countryCode" class="form-label">Country Code</label>
+                        <i class="fa-solid fa-phone"></i>
+                        <select class="form-select" id="countryCode">
+                          <option value="+1">United States (+1)</option>
+                          <option value="+44">United Kingdom (+44)</option>
+                          <option value="+91">India (+91)</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+                        <div class="form-text">Please enter a 10-digit phone number.</div>
+                      </div>
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <i class="fa-solid fa-lock"></i>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check mb-3">
+                    <button type="submit" class="btn btn-primary">Create Your Account</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-brands fa-facebook"></i>
+                        Continue With Facebook
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-brands fa-google"></i>
+                        Continue With Google
+                    </button>
+                  </form>
+                  <hr>
+                  <p>Already Registered? <a href="">Login In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
